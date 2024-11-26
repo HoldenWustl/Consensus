@@ -303,7 +303,7 @@ input{
   position: absolute;        /* Position it relative to the page */
   top: 10px;                   /* Distance from the top of the page */
   right: 10px;                 /* Distance from the right of the page */
-  z-index: 0px;
+  z-index: 0;
 }
 
 
