@@ -257,14 +257,13 @@ input{
   display: flex;
   flex-direction: column;
   position: absolute;
-  z-index: -10;
+  z-index: 10;
   right: 100px;
   top: 40px;
 }
 #profile-icon{
   position: relative;
-  left: 100px;
-  z-index: 20;
+  left: 20px;
 }
 #profile-icon,
 #volume-icon {
@@ -303,7 +302,6 @@ input{
   position: absolute;        /* Position it relative to the page */
   top: 10px;                   /* Distance from the top of the page */
   right: 10px;                 /* Distance from the right of the page */
-  z-index: 0;
 }
 
 
@@ -313,10 +311,6 @@ input{
 }
 #volume-icon{
   filter: brightness(1.25);
-}
-.switchpage-container{
-  width: 0;
-  margin-right: 200px;
 }
 #switchpage,
 #votingpagebutton{
@@ -331,7 +325,6 @@ input{
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
   opacity: 1;
-  z-index: 20;
 }
 #switchpage:hover,
 #votingpagebutton:hover{
