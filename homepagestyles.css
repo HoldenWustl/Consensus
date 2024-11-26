@@ -1,0 +1,534 @@
+/* https://www.youtube.com/@GreatStackDev/videos */
+body{
+  font-family: Parkinsans, Arial;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(117, 77, 31, 0.8),rgba(54, 41, 6, 0.8)),url(WoodenBackground.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.header{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#logo{
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+#slogan{
+  margin-top: 15px;
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  background-color: rgb(216, 201, 201);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: inset 5px 5px 5px rgba(0,0,0,0.1);
+}
+.form-box{
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: linear-gradient(to right,rgb(184, 147, 95),rgb(184, 147, 75));
+  padding: 20px 60px 60px;
+  text-align: center;
+  box-shadow: inset 1px 1px 5px rgba(0,0,0,0.1);
+  border: 2px solid rgb(51, 37, 6);
+}
+.form-box h1{
+  font-size: 30px;
+  margin-bottom: 60px;;
+  color: #6f521c;
+  position: relative;
+}
+.form-box h1::after{
+  content: '';
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #6f521c;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.input-field{
+  background: #dbd7d1;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+input{
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+.input-field i{
+  margin-left: 15px;
+  color: #999;
+}
+.btn-field{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.continuebtn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+  margin-bottom: 40px;
+}
+.continuebtn button,
+.btn-field button{
+  flex-basis: 48%;
+  background: #443503;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  opacity: 1;
+}
+.continuebtn button:hover,
+.btn-field button:hover{
+  opacity: 0.9;
+}
+.input-group{
+  height: 280px;
+}
+.continuebtn button.disable,
+.btn-field button.disable{
+  background: rgb(216, 201, 201);
+  color: black;
+}
+.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  visibility: hidden;
+}
+
+.hidden-disappear {
+  display: none !important; /* Ensure this takes precedence */
+}
+
+#warning{
+  position: absolute;
+  background-color: rgb(255, 94, 77);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  font-size: 12px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+#choices {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.choice {
+  position: relative;
+  width: 45%; /* Adjust as needed */
+  /* height: 300px; Adjust based on your image size */
+  text-align: center;
+}
+
+
+
+.choice-button {
+  position: absolute;
+  bottom: 0px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10;
+  transition:  transform 0.3s ease;
+}
+
+.choice-button:hover {
+  transform: scale(1.2);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#question {
+  text-align: center;        /* Centers text horizontally */
+  position: absolute;        /* Allows you to move it with top and left */
+  left: 50%;                 /* Centers horizontally */
+  transform: translateX(-50%); /* Adjusts for the element's width */
+  top: 10%;
+  background-color: rgb(216, 201, 201);
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+  transition: color 0.2s, background-color 0.2s;
+}
+#question:hover{
+  box-shadow: inset 5px 5px 10px rgba(0,0,0,0.15);
+  background-color: black;
+  color: rgb(216, 201, 201);
+}
+
+.choice-image {
+  width: 90%; /* Set an appropriate size for the images */
+  height: 400px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid black;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+.choice{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nextquestion{
+  display: flex;
+  justify-content: center;  /* Centers button horizontally */
+  align-items: center;      /* Centers button vertically (optional) */
+}
+#nextquestionbtn{
+  opacity: 1;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#nextquestionbtn:hover{
+  opacity: 0.8;
+}
+#choice1ButtonNum,
+#choice2ButtonNum{
+  bottom: -45px;
+  
+}
+
+#choice2ButtonNum{
+  margin-left: 6px;
+}
+.darkgreen{
+  background-color: darkgreen;
+}
+.darkred{
+  background-color: darkred;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  right: 100px;
+  top: 40px;
+  align-items: center;
+}
+#profile-icon,
+#volume-icon {
+  width: 40px; /* Set the size of the profile icon */
+  height: 40px; /* Set the height of the profile icon */
+  border-radius: 50%; /* Make it a circular profile image */
+  object-fit: cover; /* Ensure the image doesn't stretch */
+  background: rgb(216, 201, 201);
+  box-shadow: 0px 4px 8px rgb(0,0,0,0.5);
+}
+#profiletooltip{
+  background-color: rgb(216, 201, 201);
+  text-align: center;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  margin-top: 10px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: rgb(53, 53, 53);
+  box-shadow: 0px 4px 8px rgb(0,0,0,0.5);
+
+}
+#profile-icon:hover + #profiletooltip{
+  opacity: 0.9;
+}
+#profile-icon:hover,
+#volume-icon:hover{
+  opacity: 0.75;
+}
+.corner-container {
+  display: flex;               /* Use flexbox to arrange items horizontally */   /* Align items to the right */
+  align-items: center;        /* Vertically center the icons */
+  position: absolute;        /* Position it relative to the page */
+  top: 10px;                   /* Distance from the top of the page */
+  right: 10px;                 /* Distance from the right of the page */
+}
+
+
+.volume-container {
+  margin-right: 60px;
+  margin-top: 38px;     /* Center the volume icon vertically with the profile icon */
+}
+#volume-icon{
+  filter: brightness(1.25);
+}
+#switchpage,
+#votingpagebutton{
+  margin-right: 80px;
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  background-color: rgb(216, 201, 201);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+#switchpage:hover,
+#votingpagebutton:hover{
+  color: rgb(216, 201, 201);
+  background-color: black;
+}
+/* Overall grid layout */
+.voting-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  align-items: flex-start; /* Ensure the infoboxes align at the top */
+  margin-top: 0; /* Remove any top margin */
+  margin-bottom: 0; /* Remove any bottom margin */
+}
+
+/* Each infobox */
+.infobox {
+  display: flex;
+  flex-direction: column; /* Stack question, image, and options vertically */
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 10px;
+  background-color: rgb(216, 201, 201);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  top: 0; /* Make sure it's not pushed down */
+}
+
+/* Question text styling (bold and centered) */
+.question-text {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 10px; /* Add spacing below the question */
+  text-align: center;
+  color: #333;
+}
+
+/* Image styling */
+.infobox img {
+  width: 120px;  /* Smaller image size */
+  height: 80px; /* Keep aspect ratio for a square image */
+  border-radius: 10px;
+  object-fit: cover; /* Make sure the image fits properly */
+  margin-bottom: 10px; /* Space between image and options */
+}
+
+/* Container for options */
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%; /* Use full width available */
+}
+
+/* Option styling */
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #e1f5fe; /* Light blue background */
+  color: #333;
+  font-weight: bold;
+}
+
+/* Styling for hover effect */
+.option:hover {
+  background-color: #81d4fa; /* Darker blue on hover */
+  cursor: pointer;
+}
+
+/* Option vote percentage styling */
+.option span:last-child {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Optional: Styling for infobox hover */
+.infobox:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.vote-bar-container {
+  display: flex;
+  flex-direction: column;  /* Stack items vertically */
+  align-items: flex-start; /* Align items to the start */
+  width: 100%;  /* Set to full width of parent container */
+  max-width: 100%;  /* Ensure the container width is 100% of its parent */
+  margin: 10px 0;
+}
+
+.vote-container {
+  display: flex;
+  flex-direction: column;  /* Stack bar and text vertically */
+  align-items: flex-start; /* Align to the left side */
+  margin-bottom: 10px;
+  width: 100%;  /* Ensure each vote container fills the parent container */
+}
+
+.vote-bar {
+  height: 30px;  /* Fixed height for the bar */
+  border-radius: 5px;
+  width: 100%;  /* Ensure each bar takes up the full width of the container */
+}
+
+.vote-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;  /* Add spacing between bar and text */
+}
+
+#choice1Bar {
+  background-color: #4caf50;  /* Green for choice 1 */
+}
+
+#choice2Bar {
+  background-color: #f44336;  /* Red for choice 2 */
+}
+/* Style for the question title */
+.question-title {
+  font-weight: bold;
+  font-size: 18px; /* Adjust the font size as needed */
+  margin-bottom: 10px; /* Space between title and image */
+  text-align: center; /* Center the title */
+  margin-top: -5px;
+}
+.resultstitle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontally center the title */
+  align-items: center; /* Vertically align if needed */
+  margin: 20px 0; /* Add some spacing around the title */
+}
+.resultstitle h1 {
+  font-size: 3rem; /* Large and noticeable */
+  color: #ffffff; /* Clean white for readability */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Enhance readability with a dark shadow */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for contrast */
+  padding: 10px 30px; /* Add padding for a button-like look */
+  border-radius: 15px; /* Smooth, rounded edges */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* A stronger shadow for depth */
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+.resultstitle h1:hover{
+  opacity: 0.8;
+}
+#votingpagebutton{
+ margin-left: 90px;
+ margin-top: -10px;
+ margin-bottom: 30px;
+}
+/* Style the search bar */
+#resultssearchbar {
+  width: 50%;  /* Adjust width as needed */
+  padding: 10px;  /* Add some padding for better appearance */
+  margin: 20px auto;  /* Center the search bar horizontally with some space around it */
+  display: block;  /* Make the input block-level for centering */
+  font-size: 16px;  /* Adjust font size */
+  border: 2px solid black;  /* Light gray border */
+  border-radius: 8px;  /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow */
+  background-color: rgb(216, 201, 201);  /* Light background color */
+}
+
+/* Focus effect for the search bar */
+#resultssearchbar:focus {
+  outline: none;  /* Remove default focus outline */
+  border-color: #4caf50;  /* Change border color on focus */
+  box-shadow: 0 2px 5px rgba(76, 175, 80, 0.5);  /* Green shadow on focus */
+}
+
+/* Optional: Add placeholder styling */
+#resultssearchbar::placeholder {
+  color: darkgrey;  /* Light gray color for placeholder text */
+  font-style: italic;  /* Italicize placeholder text */
+  font-weight: 600;
+}
+
+
+#washulogo {
+  max-height: 60px; /* Adjust as needed */
+  margin-left: 120px; /* Adds spacing between logos */
+  margin-bottom: 24px;
+  height: 100px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+#washulogo:hover{
+  transform: scale(1.2);
+}

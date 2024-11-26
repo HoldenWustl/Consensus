@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Consensus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="homepagestyles.css">
+    <script src="https://kit.fontawesome.com/2bddb3a8eb.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js"></script>
+  </head>
+  <body>
+    <div class="homepage">
+      <div class="header">
+        <div class="logo-container">
+          <img id="logo" src="TextLogo.png">
+          <img id="washulogo" src="Washulogo.png">
+        </div>
+          <div id="slogan">
+            Pick a side. Change the world... or at least the rankings.
+          </div>
+      </div>
+      <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <form method="post" action="">
+          <div class="input-group">
+            <div class="input-field" id="namefield">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="name" placeholder="Name">
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-circle-user"></i>
+              <input type="username" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="password" placeholder="Password" required>
+            </div>
+          </div>
+          <div class="continuebtn">
+            <button type="button" class="disable" id="continue">Continue</button>
+          </div>
+          <div class="btn-field">
+            <button type="button" id="signupbtn">Sign Up</button>
+            <button type="button" id="signinbtn" class="disable">Sign In</button>
+          </div>
+          <div id="warning" class="hidden">Test</div>
+        </form>
+      </div>
+    </div>
+    <div class="voting">
+      <audio id="backgroundMusic" autoplay loop muted>
+        <source src="background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="buttonpressaudio" preload="auto" src="buttonPress.mp3" muted></audio>
+      <div class="question-container">
+        <h1 id="question">Loading question...</h1>
+        <div class="corner-container">
+          <div class="switchpage-container">
+            <button id="switchpage">Results</button>
+          </div>
+          <div class="profile-container">
+            <img id="profile-icon" src="ProfileIcon.png" alt="Profile">
+            <div id="profiletooltip">Loading...
+            </div>
+          </div>
+          <div class="volume-container">
+            <img id="volume-icon" src="volumeOff.png" alt="Volume" onclick="toggleVolume()">
+          </div>
+        </div>
+      </div>
+      <div id="choices">
+        <div id="choice1" class="choice">
+          <img id="choice1Image" class="choice-image" src="" alt="Choice 1" />
+          <button id="choice1Button" class="choice-button">Vote for Choice 1</button>
+          <button id="choice1ButtonNum" class="choice-button">Vote for Choice 1</button>
+        </div>
+        <div id="choice2" class="choice">
+          <img id="choice2Image" class="choice-image" src="" alt="Choice 2" />
+          <button id="choice2Button" class="choice-button">Vote for Choice 2</button>
+          <button id="choice2ButtonNum" class="choice-button">Vote for Choice 2</button>
+        </div>
+      </div> 
+      <div class="nextquestion">
+        <button id="nextquestionbtn" class="choice-button">Continue</button>
+      </div>     
+    </div>
+    <div class="results">
+      <div class="resultstitle">
+        <h1>Results</h1>
+        <button id="votingpagebutton">Voting</button>
+      </div>
+      <input type="text" id="resultssearchbar" placeholder="Search questions..." />
+      <div class="voting-grid"></div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
