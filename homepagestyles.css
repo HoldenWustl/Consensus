@@ -263,7 +263,7 @@ input{
   align-items: center;
 }
 #profile-icon{
-  position: absolute;
+  position: relative;
   right: 10px !important;
 }
 #profile-icon,
