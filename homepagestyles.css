@@ -262,6 +262,10 @@ input{
   top: 40px;
   align-items: center;
 }
+#profile-icon{
+  margin-top: -20px;
+  margin-left: -30px;
+}
 #profile-icon,
 #volume-icon {
   width: 40px; /* Set the size of the profile icon */
