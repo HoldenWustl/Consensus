@@ -264,7 +264,7 @@ input{
 }
 #profile-icon{
   position: absolute;
-  right: -100px;
+  right: 10px !important;
 }
 #profile-icon,
 #volume-icon {
