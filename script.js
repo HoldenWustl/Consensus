@@ -1507,7 +1507,7 @@ function animatePercentage(element, targetPercentage) {
       clearInterval(interval);
       element.textContent = `(${targetPercentage}% votes)`;
     }
-  }, 2); // Adjust speed if needed
+  }, 0.5); // Adjust speed if needed
 }
 
 
