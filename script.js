@@ -430,6 +430,15 @@ const questions = [
       votes2: 0,
       theme: "sex"
     },
+  {
+    "id": "better-superpower-teleportation-or-invisibility",
+    "question": "Which superpower would you rather have?",
+    "choice1": "Teleportation",
+    "choice2": "Invisibility",
+    "votes1": 0,
+    "votes2": 0,
+    "theme": "entertainment"
+  },
     {
       id: "strip-club-or-boudoir",
       question: "Strip Club or Boudoir?",
