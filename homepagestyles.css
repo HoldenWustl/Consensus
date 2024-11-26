@@ -256,16 +256,22 @@ input{
 .profile-container {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  z-index: 10;
-  right: 100px;
-  top: 40px;
-  align-items: center;
-}
-#profile-icon{
-  right: 0px;
   position: relative;
+  align-items: center;
+  z-index: 10;
 }
+
+#profile-icon {
+  width: 40px; /* Adjust size if needed */
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgb(216, 201, 201);
+  box-shadow: 0px 4px 8px rgb(0,0,0,0.5);
+  margin-left: 10px; /* Adjust to control space between profile and other icons */
+  margin-right: 10px; /* Adjust if needed */
+}
+
 #profile-icon,
 #volume-icon {
   width: 40px; /* Set the size of the profile icon */
@@ -298,18 +304,22 @@ input{
   opacity: 0.75;
 }
 .corner-container {
-  display: flex;               /* Use flexbox to arrange items horizontally */   /* Align items to the right */
-  align-items: center;        /* Vertically center the icons */
-  position: absolute;        /* Position it relative to the page */
-  top: 10px;                   /* Distance from the top of the page */
-  right: 10px;                 /* Distance from the right of the page */
+  display: flex;
+  justify-content: space-between; /* Distribute the space between the items */
+  align-items: center;            /* Vertically center the items */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 200px;                   /* Add width to control spacing between items */
 }
+
 
 
 .volume-container {
-  margin-right: 60px;
-  margin-top: 38px;     /* Center the volume icon vertically with the profile icon */
+  margin-right: 0;  /* Remove extra margin */
+  margin-left: 20px; /* Adjust margin to control spacing from profile icon */
 }
+
 #volume-icon{
   filter: brightness(1.25);
 }
