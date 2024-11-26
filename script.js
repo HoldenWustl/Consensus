@@ -61,7 +61,7 @@ function isMobileDevice() {
 }
 let animationSpeed;
 if (isMobileDevice()) {
-    animationSpeed = 0.2;
+    animationSpeed = 0.5;
 } else {
     animationSpeed = 0.1;
 }
