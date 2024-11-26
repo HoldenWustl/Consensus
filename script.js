@@ -59,10 +59,11 @@ loadAccountsFromFirebase();
 function isMobileDevice() {
     return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 }
+let animationSpeed;
 if (isMobileDevice()) {
-    let animationSpeed = 0.2;
+    animationSpeed = 0.2;
 } else {
-    let animationSpeed = 0.1;
+    animationSpeed = 0.1;
 }
 function validateForm(){
   let name = document.getElementById("name").value.trim();
