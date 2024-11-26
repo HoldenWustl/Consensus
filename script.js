@@ -466,7 +466,15 @@ const questions = [
       votes2: 0,
       theme: "sex"
     },
-  
+  {
+    id: "best-battle",
+    question: "Most Epic Battle?",
+    choice1: "Gettysburg",
+    choice2: "Battle of the Bulge",
+    votes1: 0,
+    votes2: 0,
+    theme: "war"
+  },
     // **College Life Theme**
     {
       id: "skip-class-or-show-up-late",
