@@ -391,6 +391,78 @@ const questions = [
       votes2: 0,
       theme: "relationship"
     },
+  {
+    id: "tacos-or-burritos",
+    question: "Tough choice—what's better?",
+    choice1: "Tacos",
+    choice2: "Burritos",
+    votes1: 0,
+    votes2: 0,
+    theme: "food"
+  },
+  {
+    id: "cats-or-dogs",
+    question: "Who’s the better pet?",
+    choice1: "Cats",
+    choice2: "Dogs",
+    votes1: 0,
+    votes2: 0,
+    theme: "lifestyle"
+  },
+  {
+    id: "netflix-or-hulu",
+    question: "Best streaming platform?",
+    choice1: "Netflix",
+    choice2: "Hulu",
+    votes1: 0,
+    votes2: 0,
+    theme: "entertainment"
+  },
+  {
+    id: "winter-or-summer",
+    question: "Favorite season?",
+    choice1: "Winter",
+    choice2: "Summer",
+    votes1: 0,
+    votes2: 0,
+    theme: "lifestyle"
+  },
+  {
+    id: "coke-or-pepsi",
+    question: "Which drink reigns supreme?",
+    choice1: "Coke",
+    choice2: "Pepsi",
+    votes1: 0,
+    votes2: 0,
+    theme: "food"
+  },
+  {
+    id: "harry-potter-or-lord-of-the-rings",
+    question: "Which saga rules?",
+    choice1: "Harry Potter",
+    choice2: "Lord of the Rings",
+    votes1: 0,
+    votes2: 0,
+    theme: "entertainment"
+  },
+  {
+    id: "disney-or-pixar",
+    question: "Who makes better movies?",
+    choice1: "Disney",
+    choice2: "Pixar",
+    votes1: 0,
+    votes2: 0,
+    theme: "entertainment"
+  },
+  {
+    id: "spotify-or-apple-music",
+    question: "Which music app rocks?",
+    choice1: "Spotify",
+    choice2: "Apple Music",
+    votes1: 0,
+    votes2: 0,
+    theme: "technology"
+  },
     {
       id: "online-dating-or-meet-cute",
       question: "Online Dating or Meet Cute?",
