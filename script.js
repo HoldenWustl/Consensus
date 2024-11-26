@@ -1402,6 +1402,9 @@ function toggleVolume() {
     volumeIcon.src = 'volumeOn.png';  // Change to "volumeOn.png"
     audio.muted = false;
     buttonAudio.muted = false;
+    audio.play().catch((err) => {
+        console.error('Audio playback failed:', err);
+    });
   } else {
     volumeIcon.src = 'volumeOff.png'; // Change back to "volumeOff.png"
     audio.muted = true;
