@@ -56,7 +56,14 @@ function loadAccountsFromFirebase() {
 }
 
 loadAccountsFromFirebase();
-
+function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+if (isMobileDevice()) {
+    let animationSpeed = 0.2;
+} else {
+    let animationSpeed = 0.1;
+}
 function validateForm(){
   let name = document.getElementById("name").value.trim();
   let username = document.getElementById("username").value.trim();
@@ -1502,7 +1509,7 @@ function animatePercentage(element, targetPercentage) {
       return;
     }
     element.textContent = `(${current.toFixed(1)}% votes)`;
-    current += 0.1;
+    current += animationSpeed;
     if (current >= targetPercentage) {
       clearInterval(interval);
       element.textContent = `(${targetPercentage}% votes)`;
