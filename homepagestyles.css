@@ -2,7 +2,7 @@
 body{
   font-family: Parkinsans, Arial;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background-image: linear-gradient(rgba(117, 77, 31, 0.8),rgba(54, 41, 6, 0.8)),url(WoodenBackground.jpg);
   background-position: center;
   background-size: cover;
@@ -37,7 +37,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  top: 60%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%,-50%);
   background: linear-gradient(to right,rgb(184, 147, 95),rgb(184, 147, 75));
@@ -230,12 +230,15 @@ input{
 }
 #nextquestionbtn{
   opacity: 1;
-  margin-bottom: 20px;
+  margin-bottom: 130px;
   padding-left: 40px;
   padding-right: 40px;
 }
 #nextquestionbtn:hover{
   opacity: 0.8;
+}
+.question-container{
+  padding-bottom:40px;
 }
 #choice1ButtonNum,
 #choice2ButtonNum{
