@@ -314,6 +314,10 @@ input{
 #volume-icon{
   filter: brightness(1.25);
 }
+.switchpage-container{
+  width: 0;
+  margin-right: 200px;
+}
 #switchpage,
 #votingpagebutton{
   margin-right: 80px;
