@@ -1357,20 +1357,45 @@ function loadRandomQuestion() {
   choice2El.textContent = `${randomQuestion.choice2}`;
   // choice2ElNum.textContent = `(${((randomQuestion.votes2/(randomQuestion.votes1+randomQuestion.votes2))*100).toFixed(1) || 0}% votes)`;
 
-  getImageUrl(randomQuestion.choice1+" "+randomQuestion.theme)
+  choice1ImageEl.classList.add("fade-out");
+
+  getImageUrl(randomQuestion.choice1 + " " + randomQuestion.theme)
     .then(url => {
-      choice1ImageEl.src = url;
+      // Wait for the fade-out animation to complete
+      setTimeout(() => {
+        choice1ImageEl.src = url;
+  
+        // Wait for the image to load before removing the fade-out class
+        choice1ImageEl.onload = () => {
+          // Force reflow by reading a property
+          choice1ImageEl.offsetHeight;
+          choice1ImageEl.classList.remove("fade-out");
+        };
+      }, 500); // Duration matches the CSS transition time
     })
     .catch(error => {
       console.error("Error fetching image for choice1:", error);
+      choice1ImageEl.classList.remove("fade-out");
     });
+    choice2ImageEl.classList.add("fade-out");
 
-  getImageUrl(randomQuestion.choice2+" "+randomQuestion.theme)
+  getImageUrl(randomQuestion.choice2 + " " + randomQuestion.theme)
     .then(url => {
-      choice2ImageEl.src = url;
+      // Wait for the fade-out animation to complete
+      setTimeout(() => {
+        choice2ImageEl.src = url;
+  
+        // Wait for the image to load before removing the fade-out class
+        choice2ImageEl.onload = () => {
+          // Force reflow by reading a property
+          choice2ImageEl.offsetHeight;
+          choice2ImageEl.classList.remove("fade-out");
+        };
+      }, 500); // Duration matches the CSS transition time
     })
     .catch(error => {
       console.error("Error fetching image for choice2:", error);
+      choice2ImageEl.classList.remove("fade-out");
     });
 
   // Attach click listeners for voting
