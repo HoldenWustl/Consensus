@@ -448,6 +448,89 @@ const questions = [
       votes2: 0,
       theme: "sex"
     },
+  {
+  id: "iphone-or-android",
+  question: "iPhone or Android?",
+  choice1: "iPhone",
+  choice2: "Android",
+  votes1: 0,
+  votes2: 0,
+  theme: "tech"
+},
+{
+  id: "pizza-or-burgers",
+  question: "Pizza or Burgers?",
+  choice1: "Pizza",
+  choice2: "Burgers",
+  votes1: 0,
+  votes2: 0,
+  theme: "food"
+},
+{
+  id: "cats-or-dogs",
+  question: "Cats or Dogs?",
+  choice1: "Cats",
+  choice2: "Dogs",
+  votes1: 0,
+  votes2: 0,
+  theme: "animals"
+},
+{
+  id: "marvel-or-dc",
+  question: "Marvel or DC?",
+  choice1: "Marvel",
+  choice2: "DC",
+  votes1: 0,
+  votes2: 0,
+  theme: "movies"
+},
+{
+  id: "netflix-or-hulu",
+  question: "Netflix or Hulu?",
+  choice1: "Netflix",
+  choice2: "Hulu",
+  votes1: 0,
+  votes2: 0,
+  theme: "entertainment"
+},
+{
+  id: "beach-or-mountains",
+  question: "Beach or Mountains?",
+  choice1: "Beach",
+  choice2: "Mountains",
+  votes1: 0,
+  votes2: 0,
+  theme: "travel"
+},
+{
+  id: "early-bird-or-night-owl",
+  question: "Early Bird or Night Owl?",
+  choice1: "Early Bird",
+  choice2: "Night Owl",
+  votes1: 0,
+  votes2: 0,
+  theme: "lifestyle"
+},
+{
+  id: "coffee-or-tea",
+  question: "Coffee or Tea?",
+  choice1: "Coffee",
+  choice2: "Tea",
+  votes1: 0,
+  votes2: 0,
+  theme: "food"
+},
+
+{
+  id: "tiktok-or-instagram",
+  question: "TikTok or Instagram?",
+  choice1: "TikTok",
+  choice2: "Instagram",
+  votes1: 0,
+  votes2: 0,
+  theme: "social-media"
+},
+
     {
       id: "quickie-or-marathon",
       question: "Quickie or Marathon?",
