@@ -263,7 +263,7 @@ input{
   align-items: center;
 }
 #profile-icon{
-  transform: translateX(-50px);
+  right: 0px;
 }
 #profile-icon,
 #volume-icon {
