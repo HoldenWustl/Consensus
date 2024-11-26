@@ -257,13 +257,14 @@ input{
   display: flex;
   flex-direction: column;
   position: absolute;
-  z-index: 10;
+  z-index: -10;
   right: 100px;
   top: 40px;
 }
 #profile-icon{
   position: relative;
   left: 100px;
+  z-index: 20;
 }
 #profile-icon,
 #volume-icon {
@@ -302,6 +303,7 @@ input{
   position: absolute;        /* Position it relative to the page */
   top: 10px;                   /* Distance from the top of the page */
   right: 10px;                 /* Distance from the right of the page */
+  z-index: 0px;
 }
 
 
