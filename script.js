@@ -1234,7 +1234,7 @@ function getAllQuestionsFromFirebase() {
 }
 
 getAllQuestionsFromFirebase();
-
+let stopFlag = false;
 function loadRandomQuestion() {
   next.innerHTML = "Skip";
   next.style = "background-color: darkred;";
@@ -1296,6 +1296,7 @@ getAllQuestionsFromFirebase()
   });
 
 next.addEventListener("click", function() {
+  stopFlag = true;
   loadRandomQuestion();
 });
 function vote(questionId, voteKey, question) {
@@ -1343,7 +1344,7 @@ function vote(questionId, voteKey, question) {
                   (updatedQuestion.votes2 / totalVotes) *
                   100
                 ).toFixed(1);
-
+                stopFlag = false;
                 choice1El.textContent = `${updatedQuestion.choice1}`;
                 choice2El.textContent = `${updatedQuestion.choice2}`;
                 next.innerHTML = "Continue";
@@ -1371,6 +1372,10 @@ function vote(questionId, voteKey, question) {
 function animatePercentage(element, targetPercentage) {
   let current = 0;
   const interval = setInterval(() => {
+    if(stopFlag){
+      clearInterval(interval);
+      return;
+    }
     element.textContent = `(${current.toFixed(1)}% votes)`;
     current += 0.1;
     if (current >= targetPercentage) {
