@@ -270,7 +270,7 @@ input{
   flex-direction: column;
   position: absolute;
   z-index: 0;
-  right: 50px;
+  right: 0px;
   top: 40px;
   justify-content: center;
   align-items: center;
@@ -314,15 +314,15 @@ input{
   display: flex;               /* Use flexbox to arrange items horizontally */   /* Align items to the right */
   align-items: center;        /* Vertically center the icons */
   position: absolute;        /* Position it relative to the page */
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 10px;
   top: 10px;                   /* Distance from the top of the page */
-  right: 10px;                 /* Distance from the right of the page */
+  right: 40px;                 /* Distance from the right of the page */
 }
 
 
 .volume-container {
-  margin-right: 60px;
+  margin-right: 0px;
   margin-top: 38px;     /* Center the volume icon vertically with the profile icon */
 }
 #volume-icon{
@@ -330,7 +330,7 @@ input{
 }
 #switchpage,
 #votingpagebutton{
-  margin-right: 80px;
+  margin-right: 0px;
   margin-top: 40px;
   padding: 10px;
   font-size: 16px;
