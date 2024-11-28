@@ -274,6 +274,7 @@ input{
   top: 40px;
   justify-content: center;
   align-items: center;
+  gap: 8px;
 }
 #profile-icon{
   position: relative;
@@ -313,6 +314,8 @@ input{
   display: flex;               /* Use flexbox to arrange items horizontally */   /* Align items to the right */
   align-items: center;        /* Vertically center the icons */
   position: absolute;        /* Position it relative to the page */
+  justify-content: flex-end;
+  gap: 10px;
   top: 10px;                   /* Distance from the top of the page */
   right: 10px;                 /* Distance from the right of the page */
 }
