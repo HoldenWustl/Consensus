@@ -297,6 +297,60 @@ const questions = [
       votes2: 0,
       theme: "celebrity"
     },
+  {
+  id: "piercing-or-tattoo",
+  question: "Would you rather get a new piercing or a new tattoo?",
+  choice1: "Piercing",
+  choice2: "Tattoo",
+  votes1: 0,
+  votes2: 0,
+  theme: "18+"
+},
+  {
+  id: "rollercoaster-thrills-or-haunted-house-scares",
+  question: "Which would you choose for an adrenaline rush: rollercoaster thrills or haunted house scares?",
+  choice1: "Rollercoaster",
+  choice2: "Haunted House",
+  votes1: 0,
+  votes2: 0,
+  theme: "18+"
+},
+  {
+  id: "gamble-big-or-play-it-safe",
+  question: "Would you rather gamble big and risk losing or play it safe and win small?",
+  choice1: "Gamble Big",
+  choice2: "Play It Safe",
+  votes1: 0,
+  votes2: 0,
+  theme: "18+"
+},
+  {
+  id: "vip-nightclub-or-cozy-bar",
+  question: "Would you prefer a night out at a VIP nightclub or a cozy bar?",
+  choice1: "VIP Nightclub",
+  choice2: "Cozy Bar",
+  votes1: 0,
+  votes2: 0,
+  theme: "18+"
+},
+  {
+  id: "smoke-or-edible",
+  question: "Which would you choose: smoke or edible?",
+  choice1: "Smoke",
+  choice2: "Edible",
+  votes1: 0,
+  votes2: 0,
+  theme: "18+"
+},
+  {
+  id: "no-social-media-or-no-alcohol",
+  question: "Would you rather live without social media or without alcohol?",
+  choice1: "No Social Media",
+  choice2: "No Alcohol",
+  votes1: 0,
+  votes2: 0,
+  theme: "18+"
+},
     {
       id: "hotter-kim-kardashian-or-kylie-jenner",
       question: "Who's Hotter?",
