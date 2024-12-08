@@ -446,6 +446,42 @@ const questions = [
     theme: "entertainment"
   },
   {
+  id: "hiking-or-biking",
+  question: "Would you rather go hiking or biking?",
+  choice1: "Hiking",
+  choice2: "Biking",
+  votes1: 0,
+  votes2: 0,
+  theme: "lifestyle"
+},
+  {
+  id: "cheesecake-or-brownies",
+  question: "What dessert would you pick: cheesecake or brownies?",
+  choice1: "Cheesecake",
+  choice2: "Brownies",
+  votes1: 0,
+  votes2: 0,
+  theme: "food"
+},
+  {
+  id: "fight-100-ducks-or-1-horse",
+  question: "Would you rather fight 100 duck-sized horses or 1 horse-sized duck?",
+  choice1: "100 Duck-Sized Horses",
+  choice2: "1 Horse-Sized Duck",
+  votes1: 0,
+  votes2: 0,
+  theme: "funny"
+},
+  {
+  id: "talk-to-animals-or-speak-all-languages",
+  question: "Would you rather be able to talk to animals or speak every human language?",
+  choice1: "Talk to Animals",
+  choice2: "Speak All Languages",
+  votes1: 0,
+  votes2: 0,
+  theme: "funny"
+},
+  {
     id: "disney-or-pixar",
     question: "Who makes better movies?",
     choice1: "Disney",
@@ -472,15 +508,7 @@ const questions = [
       votes2: 0,
       theme: "relationship"
     },
-    {
-      id: "cheat-or-be-cheated-on",
-      question: "Cheat or Be Cheated On?",
-      choice1: "Cheat",
-      choice2: "Be Cheated On",
-      votes1: 0,
-      votes2: 0,
-      theme: "relationship"
-    },
+    
     {
       id: "casual-hookup-or-commitment",
       question: "Casual Hookup or Commitment?",
@@ -528,15 +556,7 @@ const questions = [
       votes2: 0,
       theme: "sex"
     },
-  {
-  id: "iphone-or-android",
-  question: "iPhone or Android?",
-  choice1: "iPhone",
-  choice2: "Android",
-  votes1: 0,
-  votes2: 0,
-  theme: "tech"
-},
+  
 {
   id: "pizza-or-burgers",
   question: "Pizza or Burgers?",
@@ -546,29 +566,57 @@ const questions = [
   votes2: 0,
   theme: "food"
 },
+
 {
-  id: "cats-or-dogs",
-  question: "Cats or Dogs?",
-  choice1: "Cats",
-  choice2: "Dogs",
+  id: "rich-or-famous",
+  question: "Would you rather be rich or famous?",
+  choice1: "Rich",
+  choice2: "Famous",
   votes1: 0,
   votes2: 0,
-  theme: "animals"
+  theme: "personal"
 },
 {
-  id: "marvel-or-dc",
-  question: "Marvel or DC?",
-  choice1: "Marvel",
-  choice2: "DC",
+  id: "star-wars-or-star-trek",
+  question: "Which universe do you prefer: Star Wars or Star Trek?",
+  choice1: "Star Wars",
+  choice2: "Star Trek",
   votes1: 0,
   votes2: 0,
-  theme: "movies"
+  theme: "entertainment"
 },
-{
-  id: "netflix-or-hulu",
-  question: "Netflix or Hulu?",
-  choice1: "Netflix",
-  choice2: "Hulu",
+  {
+  id: "super-strength-or-invisibility",
+  question: "Which superpower would you choose: super strength or invisibility?",
+  choice1: "Super Strength",
+  choice2: "Invisibility",
+  votes1: 0,
+  votes2: 0,
+  theme: "personal"
+},
+  {
+  id: "travel-backward-or-forward-in-time",
+  question: "Would you rather travel backward or forward in time?",
+  choice1: "Backward",
+  choice2: "Forward",
+  votes1: 0,
+  votes2: 0,
+  theme: "personal"
+},
+  {
+  id: "city-life-or-country-life",
+  question: "Would you rather live in the city or the countryside?",
+  choice1: "City",
+  choice2: "Countryside",
+  votes1: 0,
+  votes2: 0,
+  theme: "lifestyle"
+},
+  {
+  id: "art-museum-or-history-museum",
+  question: "Would you rather visit an art museum or a history museum?",
+  choice1: "Art Museum",
+  choice2: "History Museum",
   votes1: 0,
   votes2: 0,
   theme: "entertainment"
@@ -778,15 +826,7 @@ const questions = [
       votes2: 0,
       theme: "food"
     },
-    {
-      id: "pizza-or-burger",
-      question: "Pizza or Burger?",
-      choice1: "Pizza",
-      choice2: "Burger",
-      votes1: 0,
-      votes2: 0,
-      theme: "food"
-    },
+    
   
   
   // **Food Theme**
