@@ -192,10 +192,10 @@ input{
 }
 #question {
   text-align: center;        /* Centers text horizontally */
-  position: absolute;        /* Allows you to move it with top and left */
-  left: 50%;                 /* Centers horizontally */
-  transform: translateX(-50%); /* Adjusts for the element's width */
-  top: 10%;
+  position: relative;        /* Allows you to move it with top and left */
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -100px;
   background-color: rgb(216, 201, 201);
   padding: 10px;
   color: black;
