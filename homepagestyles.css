@@ -239,7 +239,8 @@ input{
 }
 #nextquestionbtn{
   opacity: 1;
-  margin-bottom: 50px;
+  position: absolute;
+  bottom: 2%;
   padding-left: 40px;
   padding-right: 40px;
 }
