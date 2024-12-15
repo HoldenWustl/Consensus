@@ -243,6 +243,7 @@ input{
   position: absolute;
   padding-left: 40px;
   padding-right: 40px;
+  bottom: 30%;
 }
 #nextquestionbtn:hover{
   opacity: 0.8;
