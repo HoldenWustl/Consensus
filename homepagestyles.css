@@ -8,7 +8,6 @@ body{
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  overflow: hidden;
 }
 .header{
   margin-top: 30px;
