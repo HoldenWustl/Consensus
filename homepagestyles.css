@@ -8,6 +8,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  overflow: hidden;
 }
 .header{
   margin-top: 30px;
@@ -239,8 +240,7 @@ input{
 }
 #nextquestionbtn{
   opacity: 1;
-  position: absolute;
-  bottom: 2%;
+  position: relative;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -317,7 +317,7 @@ input{
   position: absolute;        /* Position it relative to the page */
   justify-content: flex-start;
   gap: 0px;
-  top: 10px;                   /* Distance from the top of the page */
+  top: 40px;                   /* Distance from the top of the page */
   right: 40px;                 /* Distance from the right of the page */
 }
 
@@ -550,9 +550,10 @@ input{
 }
 .logo-container{
   display: flex; /* Flexbox ensures items stay on the same line */
-  align-items: center; /* Vertically aligns the images */
+  align-items: end; /* Vertically aligns the images */
   justify-content: flex-start; /* Keeps the logos aligned to the left */
   gap: 20px; /* Controls spacing between the logos */
+  margin-top: 5%;
 } 
 #washulogo:hover{
   transform: scale(1.2);
