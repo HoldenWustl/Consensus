@@ -2,13 +2,19 @@
 body{
   font-family: Parkinsans, Arial;
   width: 100%;
-  height: 110vh;
+  height: 100%;
   background-image: linear-gradient(rgba(117, 77, 31, 0.8),rgba(54, 41, 6, 0.8)),url(WoodenBackground.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
   overflow: visible;
+  margin: 0;
+}
+.homepage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .header{
   margin-top: 30px;
@@ -38,9 +44,6 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%,-50%);
   background: linear-gradient(to right,rgb(184, 147, 95),rgb(184, 147, 75));
   padding: 20px 60px 60px;
   text-align: center;
